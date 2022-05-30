@@ -1,0 +1,26 @@
+.Hero-container {}
+
+.Hero-style {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 29px;
+
+    position: absolute;
+    width: 569px;
+    height: 327px;
+    left: 20%;
+    top: 342px;
+}
+
+.Hero-image {
+    background: url('../assets/image1.png');
+    position: absolute;
+    width: 782px;
+    height: 453px;
+    left: 50%;
+    top: 279px;
+
+}
