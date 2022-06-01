@@ -17,17 +17,20 @@ const Navbar = () => {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/pricing'>Pricing</Link>
+                    <Link to='/about'>About</Link>
                 </li>
                 <li>
-                    <Link to='/training'>Training</Link>
+                    <Link to='/skills'>Skills</Link>
+                </li>
+                <li>
+                    <Link to='/projects'>Projects</Link>
                 </li>
                 <li>
                     <Link to='/contact'>Contact</Link>
                 </li>
             </ul>
             <div className='hamburger' onClick={handleClick}>
-                {click ? (<FaTimes size={20} style={{ color: '#fff' }} />) : (<FaBars size={20} style={{ color: '#fff' }} />)}
+                {click ? (<FaTimes size={20} style={{ color: '#fff' }} />) : (<FaBars size={20} style={{ color: '#000' }} />)}
 
             </div>
         </div>

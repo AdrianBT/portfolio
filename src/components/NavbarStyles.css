@@ -1,6 +1,6 @@
 .header {
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    width: 100vw;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
 
 .nav-menu a {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .hamburger {
@@ -45,11 +45,11 @@
         top: 0;
         left: -100%;
         text-align: center;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         transition: 0.3s;
         z-index: -1;
-        background: rgba(0, 0, 0, .9);
+        background: gray;
     }
 
     .nav-menu.active {
@@ -58,6 +58,7 @@
 
     .nav-menu li {
         padding: 1rem 0;
+
     }
 
     .nav-menu a {

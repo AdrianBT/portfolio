@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ a {
 
 body {
   margin: 0;
-  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Sintony', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -54,4 +54,10 @@ code {
 
 .btn:hover {
   background: rgba(255, 255, 255, .2);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
