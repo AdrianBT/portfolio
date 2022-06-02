@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
 
+
+
 .hero-container {
     display: flex;
     margin-top: 13rem;
@@ -7,6 +9,15 @@
     margin-right: 2rem;
     margin-left: 2rem;
     justify-content: center;
+    --hero-load-time: 300ms;
+    --hero-link-load-time: 500ms;
+    /* animation: hero-load var(--hero-load-time) ease-in; */
+    animation-name: hero-link-load;
+    animation-duration: var(--hero-link-load-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--hero-load-time);
+    animation-fill-mode: forwards;
+    transform: scale(0);
 }
 
 
@@ -22,11 +33,22 @@
     margin-top: 5%;
 }
 
+.strong {
+    color: #E3D5CA;
+}
+
 .hero-header {
     font-family: 'Sintony', sans-serif;
     font-size: 3rem;
     white-space: nowrap;
     margin-bottom: 2rem;
+    /* animation-name: hero-link-load;
+    animation-duration: var(--hero-link-load-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--hero-load-time);
+    animation-fill-mode: forwards;
+    transform: scale(0);
+ */
 }
 
 .hero-subheader {
@@ -39,6 +61,8 @@
     flex: 1;
     max-width: 100%;
     max-height: 100%;
+    /* animation-name: hero-first-link-load;
+    transform: translateX(1000%); */
 }
 
 .hero-icons {
@@ -47,4 +71,59 @@
     gap: 56px;
     margin-left: 7rem;
     font-size: 2rem;
+}
+
+
+@keyframes hero-load {
+    0% {
+        transform: translateY(-100);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+@keyframes hero-link-load {
+    0% {
+        transform: scale(0);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hero-first-link-load {
+    0% {
+        transform: translateX(-1000%);
+    }
+
+    90% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes hero-last-link-load {
+    0% {
+        transform: translateX(1000%);
+    }
+
+    90% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
 }
