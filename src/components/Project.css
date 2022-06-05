@@ -13,6 +13,7 @@
     padding-top: 4rem;
     border: 2px solid black;
     box-shadow: 6px 6px 10px 0px#678;
+
 }
 
 .card-text {
@@ -26,21 +27,11 @@
     margin-top: 10rem;
     gap: 8rem;
     flex-wrap: wrap;
-}
-
-@media(max-width: 1100px) {
-    .card-holder {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
+    justify-content: center;
 }
 
 .card {
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.taskade.com%2Fblog%2Fwp-content%2Fuploads%2F2020%2F05%2F16700-2048x1365.jpg&f=1&nofb=1");
-    background-size: cover;
     background-size: contain;
     display: flex;
     padding: 21rem 0px 0;
@@ -50,6 +41,7 @@
     overflow: hidden;
     transition: transform 500ms ease;
     box-shadow: 6px 6px 10px 0px#678;
+
 
 }
 
@@ -135,6 +127,45 @@ button:focus {
     background-color: var(--clr-neutral-100);
 }
 
+.cardAnimation {
+    position: relative;
+    opacity: 0;
+}
+
+.cardAnimation.active {
+    opacity: 1;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@media(max-width: 1100px) {
+    .card-holder {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+@media(max-width: 450px) {
+    .card-holder {
+        margin-top: 3rem;
+
+    }
+
+    .card-text {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 10rem 0px 0;
+
+    }
+}
+
 @media (hover) {
     .card-content {
         transform: translateY(65%);
@@ -174,4 +205,31 @@ button:focus {
         transform: scaleX(0);
     }
 
+}
+
+
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
 }

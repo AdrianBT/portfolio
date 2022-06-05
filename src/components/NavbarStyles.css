@@ -1,6 +1,5 @@
 .header {
     position: sticky;
-    width: 100vw;
     height: 90px;
     display: flex;
     justify-content: space-between;

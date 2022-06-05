@@ -1,16 +1,13 @@
 .contact-in {
-    width: 80%;
-    height: auto;
-    margin: auto;
-    margin-top: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    border-radius: 10px;
+    background: #F5EBE0;
+    padding: 4rem;
     box-shadow: 6px 6px 10px 0px#678;
     border: 2px solid black;
-
-
 }
 
 .contact-map {
@@ -34,6 +31,11 @@
     padding: 30px;
     text-align: center;
 
+}
+
+.contact-form2 {
+    padding: 1rem;
+    margin: 5rem;
 }
 
 .contact-form h1 {
@@ -71,6 +73,7 @@
 
 .contact-form-textarea {
     width: 100%;
+    height: 12rem;
     color: #000;
     border: 1px solid #bcbcbc;
     border-radius: 50px;

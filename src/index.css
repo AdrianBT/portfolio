@@ -55,9 +55,3 @@ code {
 .btn:hover {
   background: rgba(255, 255, 255, .2);
 }
-
-.home {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}

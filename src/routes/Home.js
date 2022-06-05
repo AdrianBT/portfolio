@@ -4,17 +4,20 @@ import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Project from '../components/Project'
-
+import './Home.css'
 
 const Home = () => {
     return (
-        <div className="home">
+        <>
             <Navbar />
-            <Hero />
-            <About />
-            <Project />
-            <Contact />
-        </div>
+            <div className="home">
+
+                <Hero />
+                <About />
+                <Project />
+                <Contact />
+            </div>
+        </>
     )
 }
 
