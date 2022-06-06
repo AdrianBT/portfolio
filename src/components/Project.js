@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react'
 import './Project.css'
-import Aos from "aos"
-import "aos/dist/aos.css"
+
 
 
 
 function Project() {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
-
     function cardAnimation() {
         var cards = document.querySelectorAll(".cardAnimation")
         for (var i = 0; i < cards.length; i++) {
