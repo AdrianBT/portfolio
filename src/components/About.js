@@ -13,7 +13,7 @@ function About() {
     }, []);
 
     return (
-        <div data-aos="fade-right" className='about-header'>
+        <div data-aos="fade-right" className='about-header' id='about'>
             <h1 className='about-text'> About me </h1>
             <div className='about-container'>
 

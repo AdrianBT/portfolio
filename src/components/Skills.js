@@ -9,7 +9,7 @@ function Skills() {
     }, []);
     return (
 
-        <div data-aos='fade-down' class="skills-container">
+        <div data-aos='fade-down' class="skills-container" id='skills'>
             <div class="row">
                 <h1 class="skills-title"> Skills</h1>
                 <div class="skills-list">

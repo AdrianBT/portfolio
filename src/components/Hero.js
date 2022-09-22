@@ -19,10 +19,10 @@ function Hero() {
                     <h2 data-aos="slide-down" className='hero-subheader'>and <strong className='strong'>UX & UI Designer</strong></h2>
 
                     <div className='hero-icons'>
-                        <FaTwitter className='icon' />
-                        <FaInstagram className='icon' />
-                        <FaLinkedin className='icon' />
-                        <FaGithub className='icon' />
+                        <FaTwitter className='icon' title='not done yet' />
+                        <FaInstagram className='icon'  title='not done yet' />
+                        <FaLinkedin className='icon'  title='not done yet' />
+                        <FaGithub className='icon'  title='not done yet' />
                     </div>
 
                 </div>

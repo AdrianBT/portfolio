@@ -9,7 +9,7 @@ function Contact() {
     }, []);
 
     return (
-        <div class="contact-in">
+        <div id="contact" class="contact-in">
             <div data-aos="fade-up" class="contact-form">
                 <h1>Contact Me</h1>
                 <form>

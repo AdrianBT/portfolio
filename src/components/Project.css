@@ -31,8 +31,8 @@
 }
 
 .card {
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.taskade.com%2Fblog%2Fwp-content%2Fuploads%2F2020%2F05%2F16700-2048x1365.jpg&f=1&nofb=1");
-    background-size: contain;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png");
+    background-size: cover;
     display: flex;
     padding: 21rem 0px 0;
     width: auto;
