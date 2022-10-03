@@ -8,19 +8,23 @@ import Skills from '../components/Skills'
 import './Home.css'
 
 const Home = () => {
+    
     return (
         <>
             <Navbar />
 
 
             <div className="home">
-
+                
 
                 <Hero />
                 <About />
                 <Skills />
                 <Project />
                 <Contact />
+                
+
+
             </div>
         </>
     )

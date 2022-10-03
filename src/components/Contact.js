@@ -12,11 +12,12 @@ function Contact() {
         <div id="contact" class="contact-in">
             <div data-aos="fade-up" class="contact-form">
                 <h1>Contact Me</h1>
-                <form>
-                    <input type="text" placeholder="Name" className='contact-form-txt' />
-                    <input type="text" placeholder="Email" className='contact-form-txt' />
-                    <textarea placeholder="Message" className='contact-form-textarea'></textarea>
+                <form action="https://formsubmit.co/Adrian_BC@aol.com" method="POST">
+                    <input type="text" placeholder="Name" className='contact-form-txt' required/>
+                    <input type="email" name="email" placeholder="Email" className='contact-form-txt' required/>
+                    <textarea name="message" placeholder="Write your message here" className='contact-form-textarea'></textarea>
                     <input type="submit" name="Submit" className='contact-form-btn' />
+                    <input type="hidden" name="_next" value="https://www.adriancbutler.com/"></input>
                 </form>
             </div>
             <div class="contact-map">
